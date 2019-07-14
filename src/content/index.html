@@ -1,15 +1,145 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Paweł Kochowicz-strona domowa</title>
   <link rel="stylesheet" href="css/main.css">
+
 </head>
+
 <body>
-  <h1>Hello world!</h1>
-  
+  <header class="main__header">
+    <nav class="navigation">
+      <button class="navigation__switcher navigation__switcher--js">☰</button>
+      <ul class="navigation__list navigation__list--js">
+        <li class="navigation__item"><a class="navigation__link" href="index.html">strona główna</a></li>
+        <li class="navigation__item"><a class="navigation__link" href="about.html">o mnie</a></li>
+        <li class="navigation__item"><a class="navigation__link" href="eduplan.html">plan nauki</a></li>
+        <li class="navigation__item"><a class="navigation__link" href="needs.html">wymagania</a></li>
+        <li class="navigation__item"><a class="navigation__link navigation__link--right"
+            href="capabilities.html">możliwości zatrudnienia</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main" id="top">
+    <header class="title">
+      <h1 class="title__header title__header__js">Paweł Kochowicz-strona domowa </h1>
+      <button class="title__button title__button--js">zmień treść nagłówka</button>
+    </header>
+    <section class="shortcut">
+      <h2 class="shortcut__header">Kim jestem?</h2>
+      <p class="shortcut__paragraph">
+        Na co dzień pracuję w firmie transportowej, ale chcę się nauczyć frontendu. Poza tym
+        lubię pojeździć terenówką po błocie i piachu, a potem oczywiście naprawić to co popsułem w aucie :)
+        Więcej informacji na mój temat <a class="about__link" href="about.html">tutaj</a>
+      </p>
+    </section>
+    <section class="diary">
+      <h2 class="diary__header">Pamiętniczek</h2>
+      <section class="entry">
+        <h3 class="entry__title">Czego chcę się nauczyć?</h3>
+        <p class="entry__paragraph">Chcę się nauczyć jak tworzyć strony zgodnie z zasadami i dobrymi praktykami
+          stosowanymi przy
+          pisaniu kodu. Mam nadzieję, że ten kurs mi w tym pomoże </p>
+        <a class="diary__link" href="eduplan.html">Tutaj jest plan mojej nauki</a>
+      </section>
+      <section class="entry">
+        <h3 class="entry__title">Co chcę z tym zrobić?</h3>
+        <p class="entry__paragraph">Chcę poświęcić odpowiednią ilość czasu na naukę, żebym mógł bez wahania pójść na
+          rozmowę
+          o pracę na
+          stanowisko juniora i rozpocząć karierę w branży IT. Przede mną daleka droga, ale mam nadzieję, ze
+          wszystko pójdzie w dobrym kierunku</p>
+        <a href="needs.html">Tutaj sprawdzisz wymagania</a>
+      </section>
+      <section class="entry">
+        <h3 class="entry__title">jak to widzę dalej?</h3>
+        <p class="entry__paragraph">Zobaczymy. Właśnie skończyłem drugi tydzień i jakoś mało tego ale poczekamy co
+          będzie
+          dalej. Myślę
+          ,że się rozkręci :D </p>
+        <a href="capabilities.html">Tutaj sprawdzisz możliwości zatrudnienia</a>
+      </section>
+      <section class="entry">
+        <h3 class="entry__title">Czego się nauczyłem do tej pory?</h3>
+        <ul class="entry__list">
+          <li class="entry__element">podstawowego szkieletu strony</li>
+          <li class="entry__element">podstaw stylowania</li>
+          <li class="entry__element">kilku rzeczy jeszcze z kursu samuraja (np. listy, skróty emmeta)</li>
+        </ul>
+      </section>
+      <section class="entry">
+        <h3 class="entry__title">Czego chcę się nauczyć w najbliższym czasie?</h3>
+        <ul class="entry__list">
+          <li class="entry__element">właściwej budowy szkieletu strony</li>
+          <li class="entry__element">bardziej rozbudowanego stylowania w CSS</li>
+          <li class="entry__element">Jak to napisać, żeby było zgodnie ze sztuką</li>
+        </ul>
+      </section>
+      <section class="entry">
+        <h3 class="entry__title">Co chcę wiedzieć w dalszej kolejności?</h3>
+        <ul class="entry__list">
+          <li class="entry__element">Podstawy JavaScript</li>
+          <li class="entry__element">GIT i inne pomocne (i niezbędne) narzędzia w codziennej pracy</li>
+          <li class="entry__element">Jak stworzyć dalszą ścieżkę rozwoju</li>
+        </ul>
+      </section>
+    </section>
+
+    <section class="oderlist">
+      <h3 class="oderlist__header">Typ listy dl</h3>
+      <dl class="dllist">
+        <dt class="dllist__elementdt">CSS</dt>
+        <dd class="dllist__elementdd">kaskadowe arkusze stylów</dd>
+        <dt class="dllist__elementdt">HTML</dt>
+        <dd class="dllist__elementdd">szkielet strony</dd>
+        <dt class="dllist__elementdt">JavaScript</dt>
+        <dt class="dllist__elementdt">ES6</dt>
+        <dd class="dllist__elementdd">język programowania we Frontendzie(głównie)</dd>
+      </dl>
+    </section>
+    <section class="table__example">
+      <h3 class="table__example--header">Przykład tabeli</h3>
+      <table class="table">
+        <caption class="table__title">tytuł tabeli (np. oceny semestr 1)</caption>
+        <thead class="table__header">
+          <!--nagłówek tabeli (kolejne elementy listy w tabeli)-->
+          <tr class="table__list">
+            <th class="table__cell">Imię i Nazwisko</th>
+            <th class="table__cell">Ocena</th>
+            <th class="table__cell">Data</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table__list">
+            <th class="table__cell">Paweł Kochowicz</th>
+            <th class="table__cell">4</th>
+            <th class="table__cell">25.06.2019</th>
+          </tr>
+          <tr class="table__list">
+            <th class="table__cell">Inny Człowiek</th>
+            <th class="table__cell">2</th>
+            <th class="table__cell">24.05.2019</th>
+          </tr>
+
+
+        </tbody>
+      </table>
+
+    </section>
+  </main>
+  <footer class="footer">
+    <a class="footer__link" href="#top">na górę</a>
+    <p class="footer__paragraph">Strona domowa Pawła Kochowicza, wszystkie treści zostały stworzone na potrzeby nauki w
+      trakcie kursu
+      <span class="footer__wtf"> WTF: Co ten frontend.</span></p>
+  </footer>
+  <p class="paragraph__js">bla bla bla</p>
   <script src="js/main.js"></script>
+
 </body>
+
 </html>

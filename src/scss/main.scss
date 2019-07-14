@@ -11,6 +11,260 @@ html {
 }
 
 body {
-  color: $yellow;
-  background: $violet;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 1) 4%, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 1) 80%, rgba(255, 255, 255, 1) 96%);
+  width: 65%;
+  margin: 0 auto;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a.navigation__link {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+a.navigation__link:hover {
+  color: rgb(82, 82, 82);
+  text-decoration: none;
+}
+
+
+
+.about {
+  max-width: 100%;
+  color: rgb(163, 163, 163);
+  padding: 16px;
+  border-bottom: 3px dotted cornsilk;
+  &__header {
+    color: salmon;
+    position: relative;
+  }
+  &__paragraph {
+    max-height: 200px;
+    overflow: auto;
+    color: #949494;
+
+  }
+  &__image {
+    width: 100%;
+  max-width: 150px;
+  display: block;
+  float: left;
+  margin: 0 16px 0 0;
+  }
+}
+
+.article {
+  &__image {
+    width: 100%;
+    max-width: 150px;
+    display: block;
+    float: left;
+    margin: 0 16px 0 0;
+  }
+  &__footer {
+    color: rgb(163, 163, 163);
+  display: block;
+  overflow: hidden;
+  }
+  &__header {
+    color: #949494;
+  }
+  &_paragraph {
+    color: #949494;
+  }
+}
+
+.entry, .dllist, .table__cell {
+  color: rgb(163, 163, 163);
+  padding: 16px;
+  border-bottom: 3px dotted cornsilk;
+}
+
+
+
+.box {
+  color: rgb(255, 0, 0);
+  width: 100px;
+  height: 100px;
+  background: wheat;
+  padding: 10px;
+  border: 10px solid red;
+  margin: 10px;
+  position: absolute;
+  top: 67px;
+  left: 63%;
+}
+
+.diary__header, .shortcut__header, .shortcut__paragraph, .main__paragraph, .footer__paragraph, .entry__paragraph, .paragraph__js, .oderlist__header, .table__example--header, .table__title {
+  color: #949494;
+}
+
+.dllist {
+  padding: 0 0 10px 0;
+  text-indent: 30px;
+  list-style: none;
+}
+
+.entry {
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 5px;
+}
+
+.entry__list {
+  text-indent: 30px;
+  list-style: none;
+  padding: 0;
+}
+
+.footer, .image__footer, .about__footer {
+  color: rgb(163, 163, 163);
+  display: block;
+  overflow: hidden;
+}
+
+.footer__link {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+.footer__wtf {
+  font-weight: bold;
+}
+
+.form {
+  color: rgb(163, 163, 163);
+}
+
+.form__input {
+  margin: 0 0 10px 0;
+}
+
+.form__label--message {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.form__message {
+  padding: 0 0 0 10px;
+}
+
+.title__header, .about__header {
+  color: rgb(255, 0, 0);
+  font-size: 2em;
+}
+
+.title, .about__header {
+  min-height: 20vw;
+  background-image: url('https://images.pexels.com/photos/1308624/pexels-photo-1308624.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+  background-position: center center;
+}
+
+.table {
+  width: 100%;
+}
+
+.main {
+  padding-top: 50px;
+  display: grid;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  grid-template-areas: "header header" "about about" "diary oderList" "table table"
+}
+
+.main__image {
+  width: 100%;
+  max-width: 300px;
+  float: left;
+  margin: 0 16px 16px 0;
+  padding: 30px 0 0 0;
+}
+
+.main__header {
+  position: fixed;
+  width: 65%;
+  background: rgb(22, 22, 22);
+  font-family: Roboto, sans-serif;
+}
+
+.navigation__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navigation__link {
+  padding: 0 20px;
+  margin: 5px;
+  border-left: 2px dotted;
+  border-right: 2px dotted;
+}
+
+.navigation__link--right {
+  border-right: 2px dotted;
+}
+
+.navigation__item {
+  display: inline;
+}
+
+.title {
+  grid-area: header;
+}
+
+.shortcut {
+  grid-area: about;
+}
+
+.diary {
+  grid-area: diary;
+}
+
+.oderlist {
+  grid-area: oderList;
+}
+
+.table__example {
+  grid-area: table;
+}
+
+@media (max-width: 1220px) {
+  .navigation__list {
+    flex-direction: column;
+    display: none;
+    
+  }
+  .navigation__list--visible {
+    display: flex;
+  }
+  .navigation__switcher {
+    display: flex;
+    font-size: 265%;
+    align-content: flex-end;
+    border: none;
+    background: none;
+    color: white;
+  }
+}
+
+@media (max-width: 1000px) {
+  .main {
+    grid-template-areas: "header " "about " "diary" "oderList" "table";
+  }
+}
+
+@media (min-width: 1221px) {
+  .navigation__switcher {
+    display: none;
+  }
+}
+
+.title__header--red {
+  color: blue;
 }
