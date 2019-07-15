@@ -1,74 +1,73 @@
 @import "_normalize";
 @import "_variables";
 
-
 html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
 body {
-  background: linear-gradient(90deg, rgba(255, 255, 255, 1) 4%, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 1) 80%, rgba(255, 255, 255, 1) 96%);
-  width: 65%;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 4%,
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(255, 255, 255, 1) 96%
+  );
   margin: 0 auto;
   text-decoration: none;
+  width: 65%;
 }
-
-a {
-  text-decoration: none;
-}
-
-a.navigation__link {
-  color: aliceblue;
-  text-decoration: none;
-}
-
-a.navigation__link:hover {
-  color: rgb(82, 82, 82);
-  text-decoration: none;
-}
-
-
 
 .about {
-  max-width: 100%;
-  color: rgb(163, 163, 163);
-  padding: 16px;
   border-bottom: 3px dotted cornsilk;
+  color: rgb(163, 163, 163);
+  max-width: 100%;
+  padding: 16px;
   &__header {
-    color: salmon;
+    background-image: url("https://images.pexels.com/photos/1308624/pexels-photo-1308624.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+    background-position: center center;
+    color: rgb(255, 0, 0);
+    font-size: 2em;
+    min-height: 20vw;
     position: relative;
   }
   &__paragraph {
-    max-height: 200px;
-    overflow: auto;
     color: #949494;
-
+    overflow: auto;
+    max-height: 200px;
   }
   &__image {
+    display: block;
+    float: left;
+    margin: 0 16px 0 0;
+    max-width: 150px;
     width: 100%;
-  max-width: 150px;
-  display: block;
-  float: left;
-  margin: 0 16px 0 0;
+  }
+  &__footer {
+    color: rgb(163, 163, 163);
+    display: block;
+    overflow: hidden;
   }
 }
 
 .article {
   &__image {
-    width: 100%;
-    max-width: 150px;
     display: block;
     float: left;
     margin: 0 16px 0 0;
+    max-width: 150px;
+    width: 100%;
   }
   &__footer {
     color: rgb(163, 163, 163);
-  display: block;
-  overflow: hidden;
+    display: block;
+    overflow: hidden;
   }
   &__header {
     color: #949494;
@@ -78,190 +77,200 @@ a.navigation__link:hover {
   }
 }
 
-.entry, .dllist, .table__cell {
+.dllist {
+  border-bottom: 3px dotted cornsilk;
   color: rgb(163, 163, 163);
   padding: 16px;
-  border-bottom: 3px dotted cornsilk;
-}
-
-
-
-.box {
-  color: rgb(255, 0, 0);
-  width: 100px;
-  height: 100px;
-  background: wheat;
-  padding: 10px;
-  border: 10px solid red;
-  margin: 10px;
-  position: absolute;
-  top: 67px;
-  left: 63%;
-}
-
-.diary__header, .shortcut__header, .shortcut__paragraph, .main__paragraph, .footer__paragraph, .entry__paragraph, .paragraph__js, .oderlist__header, .table__example--header, .table__title {
-  color: #949494;
-}
-
-.dllist {
-  padding: 0 0 10px 0;
-  text-indent: 30px;
   list-style: none;
-}
-
-.entry {
-  margin-bottom: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
-  padding: 5px;
-}
-
-.entry__list {
   text-indent: 30px;
-  list-style: none;
-  padding: 0;
-}
-
-.footer, .image__footer, .about__footer {
-  color: rgb(163, 163, 163);
-  display: block;
-  overflow: hidden;
-}
-
-.footer__link {
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-}
-
-.footer__wtf {
-  font-weight: bold;
-}
-
-.form {
-  color: rgb(163, 163, 163);
-}
-
-.form__input {
-  margin: 0 0 10px 0;
-}
-
-.form__label--message {
-  display: flex;
-  justify-content: flex-start;
-}
-
-.form__message {
-  padding: 0 0 0 10px;
-}
-
-.title__header, .about__header {
-  color: rgb(255, 0, 0);
-  font-size: 2em;
-}
-
-.title, .about__header {
-  min-height: 20vw;
-  background-image: url('https://images.pexels.com/photos/1308624/pexels-photo-1308624.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
-  background-position: center center;
-}
-
-.table {
-  width: 100%;
-}
-
-.main {
-  padding-top: 50px;
-  display: grid;
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
-  grid-template-areas: "header header" "about about" "diary oderList" "table table"
-}
-
-.main__image {
-  width: 100%;
-  max-width: 300px;
-  float: left;
-  margin: 0 16px 16px 0;
-  padding: 30px 0 0 0;
-}
-
-.main__header {
-  position: fixed;
-  width: 65%;
-  background: rgb(22, 22, 22);
-  font-family: Roboto, sans-serif;
-}
-
-.navigation__list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.navigation__link {
-  padding: 0 20px;
-  margin: 5px;
-  border-left: 2px dotted;
-  border-right: 2px dotted;
-}
-
-.navigation__link--right {
-  border-right: 2px dotted;
-}
-
-.navigation__item {
-  display: inline;
-}
-
-.title {
-  grid-area: header;
-}
-
-.shortcut {
-  grid-area: about;
 }
 
 .diary {
   grid-area: diary;
+  &__header {
+    color: #949494;
+  }
+}
+
+.entry {
+  border-bottom: 3px dotted cornsilk;
+  color: rgb(163, 163, 163);
+  margin: 0 20px 20px 20px;
+  padding: 5px;
+  &__list {
+    list-style: none;
+    padding: 0;
+    text-indent: 30px;
+  }
+  &__paragraph {
+    color: #949494;
+  }
+}
+
+.footer {
+  color: rgb(163, 163, 163);
+  display: block;
+  overflow: hidden;
+  &__paragraph {
+    color: #949494;
+  }
+  &__link {
+    bottom: 10px;
+    position: fixed;
+    right: 10px;
+  }
+  &__wtf {
+    font-weight: bold;
+  }
+}
+
+.form {
+  color: rgb(163, 163, 163);
+  &__input {
+    margin: 0 0 10px 0;
+  }
+  &__label--message {
+    display: flex;
+    justify-content: flex-start;
+  }
+  &__message {
+    padding: 0 0 0 10px;
+  }
+}
+
+.image {
+  &__footer {
+    color: rgb(163, 163, 163);
+    display: block;
+    overflow: hidden;
+  }
+}
+
+.main {
+  color: #949494;
+  display: grid;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  grid-template-areas: "header header" "about about" "diary oderList" "table table";
+  padding-top: 50px;
+  &__image {
+    float: left;
+    max-width: 300px;
+    margin: 0 16px 16px 0;
+    padding: 30px 0 0 0;
+    width: 100%;
+  }
+  &__header {
+    background: rgb(22, 22, 22);
+    font-family: Roboto, sans-serif;
+    position: fixed;
+    width: 65%;
+  }
+  &__paragraph {
+    color: #949494;
+    @media (max-width: 1000px) {
+      .main {
+        grid-template-areas: "header " "about " "diary" "oderList" "table";
+      }
+    }
+  }
+}
+
+.navigation {
+  &__list {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  &__link {
+    border-left: 2px dotted;
+    border-right: 2px dotted;
+    margin: 5px;
+    padding: 0 20px;
+  }
+  &__link {
+    color: aliceblue;
+    text-decoration: none;
+  }
+  &__item {
+    display: inline;
+  }
+  &__link:hover {
+    color: rgb(82, 82, 82);
+    text-decoration: none;
+  }
+  &__link--right {
+    border-right: 2px dotted;
+  }
+  @media (max-width: 1220px) {
+    .navigation__list {
+      display: none;
+      flex-direction: column;
+    }
+    .navigation__list--visible {
+      display: flex;
+    }
+    .navigation__switcher {
+      align-content: flex-end;
+      background: none;
+      border: none;
+      color: white;
+      display: flex;
+      font-size: 265%;
+    }
+  }
+  @media (min-width: 1221px) {
+    .navigation__switcher {
+      display: none;
+    }
+  }
 }
 
 .oderlist {
   grid-area: oderList;
-}
-
-.table__example {
-  grid-area: table;
-}
-
-@media (max-width: 1220px) {
-  .navigation__list {
-    flex-direction: column;
-    display: none;
-    
-  }
-  .navigation__list--visible {
-    display: flex;
-  }
-  .navigation__switcher {
-    display: flex;
-    font-size: 265%;
-    align-content: flex-end;
-    border: none;
-    background: none;
-    color: white;
+  &__header {
+    color: #949494;
   }
 }
 
-@media (max-width: 1000px) {
-  .main {
-    grid-template-areas: "header " "about " "diary" "oderList" "table";
+.paragraph__js {
+  color: #949494;
+}
+
+.shortcut {
+  grid-area: about;
+  &__header {
+    color: #949494;
+  }
+  &__paragraph {
+    color: #949494;
   }
 }
 
-@media (min-width: 1221px) {
-  .navigation__switcher {
-    display: none;
+.table {
+  width: 100%;
+  &__cell {
+    border-bottom: 3px dotted cornsilk;
+    color: rgb(163, 163, 163);
+    padding: 16px;
+  }
+  &__example__header {
+    color: #949494;
+    grid-area: table;
+  }
+  &__title {
+    color: #949494;
+  }
+}
+
+.title {
+  background-image: url("https://images.pexels.com/photos/1308624/pexels-photo-1308624.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  background-position: center center;
+  grid-area: header;
+  min-height: 20vw;
+  &__header {
+    color: rgb(255, 0, 0);
+    font-size: 2em;
   }
 }
 
