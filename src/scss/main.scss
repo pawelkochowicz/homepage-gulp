@@ -129,9 +129,11 @@ body {
   &__input {
     margin: 0 0 10px 0;
   }
-  &__label--message {
-    display: flex;
-    justify-content: flex-start;
+  &__label {
+    &--message {
+      display: flex;
+      justify-content: flex-start;
+    }
   }
   &__message {
     padding: 0 0 0 10px;
@@ -168,60 +170,54 @@ body {
   }
   &__paragraph {
     color: #949494;
-    @media (max-width: 1000px) {
-      .main {
-        grid-template-areas: "header " "about " "diary" "oderList" "table";
-      }
-    }
+  }
+  @media (max-width: 1000px) {
+    grid-template-areas: "header " "about " "diary" "oderList" "table";
   }
 }
 
 .navigation {
-  &__list {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-  }
   &__link {
     border-left: 2px dotted;
     border-right: 2px dotted;
     margin: 5px;
     padding: 0 20px;
-  }
-  &__link {
     color: aliceblue;
     text-decoration: none;
+    &:hover {
+      color: rgb(82, 82, 82);
+      text-decoration: none;
+    }
+    &--right {
+      border-right: 2px dotted;
+    }
+  }
+  &__switcher {
+    align-content: flex-end;
+    background: none;
+    border: none;
+    color: white;
+    display: flex;
+    font-size: 265%;
+    @media (min-width: 1220px) {
+      display: none;
+    }
   }
   &__item {
     display: inline;
   }
-  &__link:hover {
-    color: rgb(82, 82, 82);
-    text-decoration: none;
-  }
-  &__link--right {
-    border-right: 2px dotted;
-  }
-  @media (max-width: 1220px) {
-    .navigation__list {
+  &__list {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    @media (max-width: 1220px) {
       display: none;
       flex-direction: column;
     }
-    .navigation__list--visible {
-      display: flex;
-    }
-    .navigation__switcher {
-      align-content: flex-end;
-      background: none;
-      border: none;
-      color: white;
-      display: flex;
-      font-size: 265%;
-    }
-  }
-  @media (min-width: 1221px) {
-    .navigation__switcher {
-      display: none;
+    &--visible {
+      @media (max-width: 1220px) {
+        display: flex;
+      }
     }
   }
 }
@@ -254,12 +250,16 @@ body {
     color: rgb(163, 163, 163);
     padding: 16px;
   }
-  &__example__header {
+  &__example {
     color: #949494;
     grid-area: table;
   }
   &__title {
     color: #949494;
+  }
+  &__header {
+    color: #949494;
+    grid-area: table;
   }
 }
 
