@@ -1,5 +1,6 @@
 @import "_normalize";
 @import "_variables";
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=latin-ext');
 
 html {
   box-sizing: border-box;
@@ -12,13 +13,9 @@ html {
 }
 
 body {
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 1) 4%,
-    rgba(0, 0, 0, 1) 20%,
-    rgba(0, 0, 0, 1) 80%,
-    rgba(255, 255, 255, 1) 96%
-  );
+  background: rgb(226,226,226);
+  background: linear-gradient(90deg, rgba(226,226,226,1) 20%, rgba(201,255,250,1) 80%);  
+  font-family: 'Roboto', sans-serif;
   margin: 0 auto;
   text-decoration: none;
   width: 65%;
@@ -26,11 +23,11 @@ body {
 
 .about {
   border-bottom: 3px dotted cornsilk;
-  color: rgb(163, 163, 163);
+  color: rgb(0, 0, 0);
   max-width: 100%;
   padding: 16px;
   &__header {
-    background-image: url("https://images.pexels.com/photos/1308624/pexels-photo-1308624.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+    background-image: url("https://image.shutterstock.com/image-photo/blue-sky-background-tiny-clouds-260nw-201157847.jpg");
     background-position: center center;
     color: rgb(255, 0, 0);
     font-size: 2em;
@@ -38,7 +35,7 @@ body {
     position: relative;
   }
   &__paragraph {
-    color: #949494;
+    color: #000000;
     overflow: auto;
     max-height: 200px;
   }
@@ -50,7 +47,7 @@ body {
     width: 100%;
   }
   &__footer {
-    color: rgb(163, 163, 163);
+    color: rgb(0, 0, 0);
     display: block;
     overflow: hidden;
   }
@@ -65,21 +62,21 @@ body {
     width: 100%;
   }
   &__footer {
-    color: rgb(163, 163, 163);
+    color: rgb(0, 0, 0);
     display: block;
     overflow: hidden;
   }
   &__header {
-    color: #949494;
+    color: #000000;
   }
   &_paragraph {
-    color: #949494;
+    color: #000000;
   }
 }
 
 .dllist {
   border-bottom: 3px dotted cornsilk;
-  color: rgb(163, 163, 163);
+  color: rgb(0, 0, 0);
   padding: 16px;
   list-style: none;
   text-indent: 30px;
@@ -88,13 +85,13 @@ body {
 .diary {
   grid-area: diary;
   &__header {
-    color: #949494;
+    color: #000000;
   }
 }
 
 .entry {
   border-bottom: 3px dotted cornsilk;
-  color: rgb(163, 163, 163);
+  color: rgb(0, 0, 0);
   margin: 0 20px 20px 20px;
   padding: 5px;
   &__list {
@@ -103,16 +100,16 @@ body {
     text-indent: 30px;
   }
   &__paragraph {
-    color: #949494;
+    color: #000000;
   }
 }
 
 .footer {
-  color: rgb(163, 163, 163);
+  color: rgb(0, 0, 0);
   display: block;
   overflow: hidden;
   &__paragraph {
-    color: #949494;
+    color: #000000;
   }
   &__link {
     bottom: 10px;
@@ -125,7 +122,7 @@ body {
 }
 
 .form {
-  color: rgb(163, 163, 163);
+  color: rgb(0, 0, 0);
   &__input {
     margin: 0 0 10px 0;
   }
@@ -142,14 +139,14 @@ body {
 
 .image {
   &__footer {
-    color: rgb(163, 163, 163);
+    color: rgb(0, 0, 0);
     display: block;
     overflow: hidden;
   }
 }
 
 .main {
-  color: #949494;
+  color: #000000;
   display: grid;
   grid-column-gap: 10px;
   grid-row-gap: 10px;
@@ -163,13 +160,14 @@ body {
     width: 100%;
   }
   &__header {
-    background: rgb(22, 22, 22);
+    background: rgb(226,226,226);
+    background: linear-gradient(90deg, rgba(226,226,226,1) 20%, rgba(201,255,250,1) 80%);    
     font-family: Roboto, sans-serif;
     position: fixed;
     width: 65%;
   }
   &__paragraph {
-    color: #949494;
+    color: #000000;
   }
   @media (max-width: 1000px) {
     grid-template-areas: "header " "about " "diary" "oderList" "table";
@@ -182,7 +180,7 @@ body {
     border-right: 2px dotted;
     margin: 5px;
     padding: 0 20px;
-    color: aliceblue;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     &:hover {
       color: rgb(82, 82, 82);
@@ -196,7 +194,7 @@ body {
     align-content: flex-end;
     background: none;
     border: none;
-    color: white;
+    color: rgb(0, 0, 0);
     display: flex;
     font-size: 265%;
     @media (min-width: 1220px) {
@@ -225,21 +223,21 @@ body {
 .oderlist {
   grid-area: oderList;
   &__header {
-    color: #949494;
+    color: #000000;
   }
 }
 
 .paragraph__js {
-  color: #949494;
+  color: #000000;
 }
 
 .shortcut {
   grid-area: about;
   &__header {
-    color: #949494;
+    color: #000000;
   }
   &__paragraph {
-    color: #949494;
+    color: #000000;
   }
 }
 
@@ -247,25 +245,26 @@ body {
   width: 100%;
   &__cell {
     border-bottom: 3px dotted cornsilk;
-    color: rgb(163, 163, 163);
+    color: rgb(0, 0, 0);
     padding: 16px;
   }
   &__example {
-    color: #949494;
+    color: #000000;
     grid-area: table;
   }
   &__title {
-    color: #949494;
+    color: #020202;
   }
   &__header {
-    color: #949494;
+    color: #020202;
     grid-area: table;
   }
 }
 
 .title {
-  background-image: url("https://images.pexels.com/photos/1308624/pexels-photo-1308624.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
-  background-position: center center;
+  background-image: url("https://image.shutterstock.com/image-photo/blue-sky-background-tiny-clouds-260nw-201157847.jpg");
+  background-position: center ;
+  background-size: cover;
   grid-area: header;
   min-height: 20vw;
   &__header {
