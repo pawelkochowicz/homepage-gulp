@@ -1,9 +1,6 @@
-# wtf-gulp-starter
+# Homepage with gulp
 
-`npm install -g gulp-cli`
+Almost the same page like my first but it was modificated by using gulp.
+Kit starter was created by Maciej Korsan for "WTF: Co ten frontend" course.
 
-`npm install`
 
-`gulp`
-
-To publish your page using github pages use `npm run deploy`
