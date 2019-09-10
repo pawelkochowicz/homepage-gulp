@@ -13,8 +13,7 @@ html {
 }
 
 body {
-  background: rgb(226,226,226);
-  background: linear-gradient(90deg, rgba(226,226,226,1) 20%, rgba(201,255,250,1) 80%);  
+  background: #7C807F;
   font-family: 'Roboto', sans-serif;
   margin: 0 auto;
   text-decoration: none;
@@ -27,7 +26,7 @@ body {
   max-width: 100%;
   padding: 16px;
   &__header {
-    background-image: url("https://image.shutterstock.com/image-photo/blue-sky-background-tiny-clouds-260nw-201157847.jpg");
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn7iCWSECbKcwjE1UIQw0Rw9Ajhy-djUstTPQsSlr5QM7UPkWY3A");
     background-position: center center;
     color: rgb(255, 0, 0);
     font-size: 2em;
@@ -160,8 +159,7 @@ body {
     width: 100%;
   }
   &__header {
-    background: rgb(226,226,226);
-    background: linear-gradient(90deg, rgba(226,226,226,1) 20%, rgba(201,255,250,1) 80%);    
+    background: #7C807F;
     font-family: Roboto, sans-serif;
     position: fixed;
     width: 65%;
@@ -262,7 +260,7 @@ body {
 }
 
 .title {
-  background-image: url("https://image.shutterstock.com/image-photo/blue-sky-background-tiny-clouds-260nw-201157847.jpg");
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn7iCWSECbKcwjE1UIQw0Rw9Ajhy-djUstTPQsSlr5QM7UPkWY3A");
   background-position: center ;
   background-size: cover;
   grid-area: header;
